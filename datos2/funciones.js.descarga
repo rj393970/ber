@@ -1,0 +1,52 @@
+ 
+function AceptarSoloNumeros(evt) 
+{
+	evt = (evt) ? evt : event
+	var key = (evt.which) ? evt.which : evt.keyCode;
+	var charTyped = String.fromCharCode(key);
+	return /^\d*$/.test(charTyped)
+    
+	//if ((key > 47 && key < 58) || key == 8 || key == 9 || key == 46 || key == 44) { return true; }
+	//else { return false; }
+}
+
+function CerrarPopUp() 
+{
+	window.parent.document.getElementById('nombreContenido').style.display='none'; 
+	window.parent.document.getElementById('nombreContenedor').style.display='none';
+}
+function HabilitarAceptar()
+{
+	var clave = document.getElementById("Clave").value;
+	if(clave.length == 6)
+	{
+		document.getElementById("btnAceptar").disabled = false;
+	}
+}
+
+function getTime(caracter)
+{
+	var iMilliSecDateTime = (new Date()).getTime();
+	return(caracter + "time=" + iMilliSecDateTime);
+}
+
+// funcion evitar pegar texto 
+function process(input){
+	var value = input.value;
+	var numbers = value.replace(/[^0-9]/g, "");
+	input.value = numbers;
+  }
+
+
+
+/*
+  function validateNumber(event) {
+    var key = window.event ? event.keyCode : event.which;
+    if (event.keyCode === 8 || event.keyCode === 46) {
+        return true;
+    } else if ( key < 48 || key > 57 ) {
+        return false;
+    } else {
+    	return true;
+    }
+};*/

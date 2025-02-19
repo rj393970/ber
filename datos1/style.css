@@ -1,0 +1,503 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.body_fondo {
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(/images/login_fondo2.jpg);
+}
+
+.body_oscuro {
+	background-color: #E8F4FF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+p,li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-decoration: none;
+	margin-top: 2px;
+	margin-right: 10px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+}
+.p_oscuro
+ {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #002362;
+	text-decoration: none;
+	margin-top: 2px;
+	margin-right: 10px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+}
+.tituloblanco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.11blanco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.11amarillo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFCC00;
+	text-decoration: none;
+}
+.inputblanco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #002362;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #002362;
+	text-decoration: none;
+	margin-top: 7px;
+	margin-right: 10px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+}
+.title {
+	font-family:Arial,Helvetica,sans-serif;
+	color:#012363;
+	font-size:18px;
+	margin-bottom:0;
+	margin-top:0;
+}
+.subtitle {
+	color:#1383A8;
+	font-size:12px;
+	font-weight:normal;
+}
+.label {
+	font-weight:bold;
+	text-align:right;
+	vertical-align:top;
+	color:Black
+}
+.size11 {
+	font-size:11px;
+}
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+	margin-top: 2px;
+	margin-right: 10px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000033;
+	text-decoration: none;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 3px;
+	margin-left: 2px;
+}
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: normal;
+	text-decoration: none;
+	margin-top: 4px;
+	margin-right: 10px;
+	margin-bottom: 4px;
+	margin-left: 10px;
+}
+h5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	margin-top: 2px;
+	margin-right: 5px;
+	margin-bottom: 2px;
+	margin-left: 5px;
+}
+h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FF0000;
+	font-weight: normal;
+	text-decoration: none;
+	margin-top: 4px;
+	margin-right: 10px;
+	margin-bottom: 4px;
+	margin-left: 10px;
+}
+h7 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #002362;
+	text-decoration: none;
+	margin-top: 7px;
+	margin-right: 10px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+}
+.linkrojo,.aNeg,.aTar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FF0000;
+	text-decoration: none;
+    text-decoration: none;
+}
+.linkrojo:hover,.aNeg:hover,.aTar:hover {
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: normal;
+	color: #002362;
+	text-decoration: none;
+}
+.linkazul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #002362;
+	text-decoration: none;
+    text-decoration: none;
+}
+.linkazul:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	
+	font-weight: normal;
+	color: #FF0000;
+	text-decoration: none;
+}
+.linkblanco {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+    text-decoration: none;
+}
+.linkblanco:hover {
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: normal;
+	color: #FFCC00;
+	text-decoration: none;
+}
+.linkblancobold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.linkblancobold:hover {
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: bold;
+	color: #FFCC00;
+	text-decoration: none;
+}
+.linkrojobold{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+.linkrojobold:hover {
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-weight: bold;
+	color: #002362;
+	text-decoration: none;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF0000;
+	text-decoration: none;
+	font-weight: normal;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+
+	color: #002362;
+	text-decoration: none;
+	font-weight: normal;
+}
+.inputrojo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #FF0000;
+	border-top-style: solid;
+	color: #002362;
+}
+.inputazul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #002362;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	border: 1px solid #002362;
+	border-top-style: solid;
+}
+.inputazul option {
+	background-image: url(/imagenes/menu_bg_division.gif);
+	background-repeat: repeat-x;
+}
+.inputazul option.ln1 {
+    background-color: #E8F4FF;
+}
+.inputazul option.ln2 {
+    background-color: #FFFFFF;
+}
+.funcionario {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #002362;
+	text-decoration: none;
+}
+.transaccion {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+.cellroja {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #FF0000;
+	margin-top: 3px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+	margin-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+}
+.cellazuloscuro,.header,.header1,.encabezado {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #002362;
+	background-color: #CCD3E0;
+	margin-top: 3px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+	margin-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 3px;
+}
+.cellazul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FF0000;
+	text-decoration: none;
+	background-color: #E5E9EF;
+	margin-top: 2px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	margin-left: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+.masespacio {
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	text-decoration: none;
+}
+.masespacio2 {
+
+	padding-top: 2px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	text-decoration: none;
+	background-color: #002362;
+}
+.linkazul12 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #002362;
+	text-decoration: none;
+}
+.linkazul12:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+	text-decoration: none;
+}
+.fondotabla {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	background-image:  url(/images/login_fondo.jpg);
+	background-repeat: repeat-y;
+}
+.fondotablaconte {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+	background-image:  url(/images/degra_bienvenido.jpg);
+	background-repeat: repeat-y;
+}
+.textorojo11 {color: #FF0000}
+.cell1 {
+	background-color: #002362;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+.cell2,.d1,.d1n,.d1b {
+	background-color: #D7E9FD;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+}
+
+.cell3,.d2,.d2n,.d2b {
+	background-color: #E8F4FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+}
+.d1n,.d1b {
+	background-color: #D7E9FD;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-align:right;
+}
+
+.d2n,.d2b {
+	background-color: #E8F4FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+	text-align:right;
+}
+.d1b {
+	background-color: #D7E9FD;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #D7E9FD;
+}
+
+.d2b {
+	background-color: #E8F4FF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #E8F4FF;
+}
+
+.nav{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9px;
+	font-weight:bold;
+	color:#F1F1F1;
+	text-decoration:none;
+	background-color:#7B96AD;
+	border:1px solid #025090;
+	cursor:hand;
+	width:15px;
+	height:15px;
+}
+
+.boton0 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: capitalize;	
+	color:#000066;
+	background: #D6E7EF;
+	border-bottom: 1px solid #104A7B;
+	border-right: 1px solid #104A7B;
+	border-left: 1px solid #AFC4D5;
+	border-top:1px solid #AFC4D5;
+	cursor: hand;
+		}
+.boton1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: capitalize;		
+	color:#FF0000;
+	background: #FFFFFF;
+	border-bottom: 1px solid #FF0000;
+	border-right: 1px solid #FF0000;
+	border-left: 1px solid #FF8080;
+	border-top:1px solid #FF8080;
+	cursor: hand;
+        }
+.boton2,.sbttn,.boton {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;	
+	text-transform: capitalize;
+	color:#FFFFFF;
+	background: #FF3535;
+	border-bottom: 1px solid #A80000;
+	border-right: 1px solid #A80000;
+	border-left: 1px solid #DF0000;
+	border-top:1px solid #DF0000;
+	cursor: hand;
+        }

